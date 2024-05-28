@@ -1,0 +1,17 @@
+.history{
+    display: flex;
+    flex-direction: column;
+    height: 6vh;
+    background-color: rgb(3, 53, 53);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 1em;
+}
+
+section>a{
+    color: white;
+    text-decoration: none;
+    margin-top: 10em;
+
+}
