@@ -116,6 +116,7 @@ body {
   
 }
 #userinput {
+  margin-top: 5px;
   margin-bottom: 2px;
   color: white;
   text-align: center;
