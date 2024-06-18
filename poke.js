@@ -81,9 +81,9 @@ document.addEventListener("DOMContentLoaded", () => {
           let pokeimagehtml = `
           
           <img class="pokeimgs" src="${front_default.src}" alt="${data.name}'s front default">
-          <img class="pokeimgs" src="${back_default.src}" alt="${data.name}'s front default">
-          <img class="pokeimgs" src="${front_female.src}" alt="${data.name}'s front default">
-          <img class="pokeimgs" src="${back_female.src}" alt="${data.name}'s front default">
+          <img class="pokeimgs" src="${back_default.src}" alt="${data.name}'s back default">
+          <img class="pokeimgs" src="${front_female.src}" alt="${data.name}'s front female default">
+          <img class="pokeimgs" src="${back_female.src}" alt="${data.name}'s back female default">
           `;
           pokeimagesdivison.insertAdjacentHTML("afterbegin", pokeimagehtml)
           // divison.appendChild(htmldata)
@@ -120,53 +120,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-//todo make it async await
-// add click down page to show all the available pokemon
-// add suggestons
-// make it mistake proof if someone enter the wrong pokemon
-// run through array to chaeck if the usergiven poke mon is availvable or not
-// toggle to darkmode
-
-// let pokemon_name = document.querySelector(".uservalue");
-// let pokedata = document.querySelector(".container");
-// let submitbtn = document.querySelector(".submitbtn");
-// let globalpokedata = []
-// submitbtn.addEventListener("click", () => {
-//   uservalue = pokemon_name.value;
-  // console.log(uservalue);
-//   let url = `https://pokeapi.co/api/v2/pokemon/${uservalue}`;
-// fetch(url)
-//   .then((res) => {
-//     return res.json();
-//   })
-//   .then((data) => {
-//     heightnum = data.height;
-
-//     console.log(data);
-//     console.log(data.name)
-//     console.log(data.weight)
-//     console.log(data.sprites["back_default"])
-//     pokedata.innerHTML = data.height;
-//   })
-//   .catch((err)=>{
-//     pokedata.innerHTML = err
-//   })
-
-//   fetch(url)
-//   .then(response=>{
-//     if (!response.ok){
-//       throw new Error("network error")
-
-//     }
-//     return response.json()
-//   })
-//   .then(data=>{
-//     globalpokedata = data
-//     processData(globalpokedata);
-//   })
-//   .catch(error=>{
-//     console.log(error);
-//   })
-
-//     pokedata = globalpokedata.height
-// });
